@@ -2,6 +2,7 @@ title: 7not-nico
 description: 7not-nico — builder and project index
 baseurl: ""
 url: "https://7not-nico.github.io"
+theme: minima
 
 defaults:
   - scope:
