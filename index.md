@@ -1,64 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>7not-nico — builder and project index</title>
-<meta name="description" content="7not-nico: domains, projects and current work — music-midi, pdf-tools, doom, cli, creative, meta.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://7not-nico.github.io/">
-<meta property="og:type" content="website">
-<meta property="og:title" content="7not-nico — builder and project index">
-<meta property="og:description" content="7not-nico: domains, projects and current work — music-midi, pdf-tools, doom, cli, creative, meta.">
-<meta property="og:url" content="https://7not-nico.github.io/">
-<meta property="og:site_name" content="7not-nico">
-<meta name="twitter:card" content="summary">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"7not-nico","url":"https://7not-nico.github.io/","sameAs":["https://github.com/7not-nico"]}
-</script>
-<style>
-:root{--bg:#fff;--fg:#222;--muted:#555;--border:#e1e4e8;--card:#f6f8fa;--accent:#0969da}
-*{box-sizing:border-box}
-body{font-family:system-ui,-apple-system,sans-serif;max-width:760px;margin:0 auto;padding:1.5rem 1rem 3rem;line-height:1.5;color:var(--fg);background:var(--bg)}
-h1{font-size:1.7rem;margin:0 0 .2rem}
-.tagline{color:var(--muted);margin:0 0 1.2rem;font-size:.95rem}
-nav{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.8rem}
-nav a{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:.3rem .7rem;font-size:.85rem;text-decoration:none;color:var(--fg)}
-nav a:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
-nav a.hub{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600}
-.domain{margin-bottom:2rem}
-.domain h2{font-size:1.1rem;margin:0 0 .6rem;padding-bottom:.3rem;border-bottom:2px solid var(--accent);display:flex;align-items:baseline;gap:.5rem}
-.domain h2 .count{font-size:.8rem;color:var(--muted);font-weight:400}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.6rem}
-.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:.7rem .9rem;text-decoration:none;color:var(--fg);transition:box-shadow .15s,border-color .15s}
-.card:hover{border-color:var(--accent);box-shadow:0 2px 6px rgba(0,0,0,.08)}
-.card .name{font-weight:600;font-size:.9rem;display:block;margin-bottom:.15rem}
-.card .desc{color:var(--muted);font-size:.8rem;line-height:1.3}
-.card.private{opacity:.55;cursor:default}
-.card.private:hover{box-shadow:none;border-color:var(--border)}
-.now{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:.8rem 1rem;margin-bottom:1.5rem}
-.now h2{margin:0 0 .5rem;border:none;padding:0;font-size:1.05rem}
-.now ul{margin:0;padding-left:1.2rem}.now li{margin:.2rem 0;font-size:.9rem}
-.foot{margin-top:2rem;color:var(--muted);font-size:.8rem;border-top:1px solid var(--border);padding-top:1rem}
-.top{position:fixed;bottom:1rem;right:1rem;background:var(--accent);color:#fff;border-radius:50%;width:2.2rem;height:2.2rem;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:1rem;opacity:.8}
-.top:hover{opacity:1}
-@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--fg:#c9d1d9;--muted:#8b949e;--border:#30363d;--card:#161b22;--accent:#58a6ff}body{background:var(--bg)}}
-</style>
-</head>
-<body id="top">
-<h1>7not-nico</h1>
-<p class="tagline">builder and project index — domains, repos and current work</p>
-<nav>
-<a class="hub" href="https://github.com/7not-nico/hub">hub</a>
-<a href="#music-midi">music-midi</a>
-<a href="#pdf-tools">pdf-tools</a>
-<a href="#doom">doom</a>
-<a href="#cli">cli</a>
-<a href="#creative">creative</a>
-<a href="#investigations">investigations</a>
-<a href="#meta">meta</a>
-<a href="#now">now</a>
-</nav>
+---
+title: 7not-nico — builder and project index
+description: 7not-nico — domains, projects and current work — music-midi, pdf-tools, doom, cli, creative, meta.
+---
+
+# 7not-nico
+
+builder and project index — domains, repos and current work
 
 <div class="now" id="now">
 <h2>now</h2>
@@ -133,6 +80,4 @@ nav a.hub{background:var(--accent);color:#fff;border-color:var(--accent);font-we
 </section>
 
 <p class="foot">Forks (omarchy, opencode, koreader…) live on the profile unlisted — watched, not owned. Full folder view: <a href="https://github.com/7not-nico/hub">hub repo</a>.</p>
-<a class="top" href="#top" title="Back to top">↑</a>
-</body>
-</html>
+EOF
