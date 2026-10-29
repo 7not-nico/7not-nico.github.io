@@ -6,28 +6,78 @@
 <title>7not-nico</title>
 <style>
 body{font-family:system-ui,sans-serif;max-width:640px;margin:2rem auto;padding:0 1rem;line-height:1.5;color:#222}
-h1{font-size:1.6rem}h2{font-size:1.15rem;margin-top:1.6rem;border-bottom:1px solid #ddd;padding-bottom:.2rem}
-ul{padding-left:1.2rem}a{color:#0969da;text-decoration:none}a:hover{text-decoration:underline}
+h1{font-size:1.6rem}h2{font-size:1.15rem;margin-top:1.8rem;border-bottom:1px solid #ddd;padding-bottom:.2rem}
+nav{background:#f6f8fa;border:1px solid #ddd;border-radius:6px;padding:.6rem .9rem}
+nav a{margin-right:.7rem;white-space:nowrap}
+ul{padding-left:1.2rem}li{margin:.25rem 0}
+a{color:#0969da;text-decoration:none}a:hover{text-decoration:underline}
+.desc{color:#555;font-size:.9rem}.top{font-size:.8rem}
 .todo{color:#666;font-style:italic}.foot{margin-top:2rem;color:#666;font-size:.85rem}
 </style>
 </head>
-<body>
+<body id="top">
 <h1>7not-nico <span class="todo">— TODO name/bio</span></h1>
-<p>Hub: <a href="https://github.com/7not-nico/hub">7not-nico/hub</a> — all repos, one folder per domain.</p>
-<h2>Domains</h2>
+<nav>
+<a href="#music-midi">music-midi</a>
+<a href="#pdf-tools">pdf-tools</a>
+<a href="#doom">doom</a>
+<a href="#cli">cli</a>
+<a href="#creative">creative</a>
+<a href="#meta">meta</a>
+<a href="#now">now</a>
+</nav>
+
+<h2 id="music-midi">music-midi <a class="top" href="#top">↑</a></h2>
 <ul>
-<li><strong>music-midi</strong> — <a href="https://github.com/7not-nico/khinside-pymidi">khinside-pymidi</a> · <a href="https://github.com/7not-nico/v2midi-zig">v2midi-zig</a> · <a href="https://github.com/7not-nico/zigmidi-player">zigmidi-player</a></li>
-<li><strong>pdf-tools</strong> — <a href="https://github.com/7not-nico/pdf-tools">pdf-tools</a> · <a href="https://github.com/7not-nico/rubypdf-tools">rubypdf-tools</a> · <a href="https://github.com/7not-nico/pdf-searcher">pdf-searcher</a> · <a href="https://github.com/7not-nico/site2pdf">site2pdf</a> · <a href="https://github.com/7not-nico/web2pdf-rb">web2pdf-rb</a> · <a href="https://github.com/7not-nico/ruby-epub">ruby-epub</a></li>
-<li><strong>doom</strong> — <a href="https://github.com/7not-nico/projectbrutalityfix">projectbrutalityfix</a> · <a href="https://github.com/7not-nico/BrutalDoomPlatinum">BrutalDoomPlatinum</a></li>
-<li><strong>cli</strong> — <a href="https://github.com/7not-nico/mathpy-cli">mathpy-cli</a> · <a href="https://github.com/7not-nico/ink-napoleon-cli">ink-napoleon-cli</a> · <a href="https://github.com/7not-nico/Scripts">Scripts</a> · <a href="https://github.com/7not-nico/shell-bench-research">shell-bench-research</a></li>
-<li><strong>creative</strong> — <a href="https://github.com/7not-nico/napoleons-campaign">napoleons-campaign</a> · <a href="https://github.com/7not-nico/cardgame-love">cardgame-love</a> (private)</li>
-<li><strong>meta</strong> — <a href="https://github.com/7not-nico/it-ops-wiki">it-ops-wiki</a> (private) · <a href="https://github.com/7not-nico/books">books</a> (private) · <a href="https://github.com/7not-nico/stale-assembler">stale-assembler</a> · <a href="https://github.com/7not-nico/_atelier">_atelier</a></li>
+<li><a href="https://github.com/7not-nico/khinside-pymidi">khinside-pymidi</a> <span class="desc">— MIDI tooling in Python</span></li>
+<li><a href="https://github.com/7not-nico/v2midi-zig">v2midi-zig</a> <span class="desc">— MIDI tooling in Zig</span></li>
+<li><a href="https://github.com/7not-nico/zigmidi-player">zigmidi-player</a> <span class="desc">— MIDI player in Zig</span></li>
 </ul>
-<h2>Now</h2>
+
+<h2 id="pdf-tools">pdf-tools <a class="top" href="#top">↑</a></h2>
 <ul>
-<li><a href="https://7not-nico.github.io/shell-bench-research/">shell-bench-research</a> — shell spawn/loop/RSS benchmarks, 10 shells measured</li>
-<li>assembler — active workspace</li>
+<li><a href="https://github.com/7not-nico/pdf-tools">pdf-tools</a> <span class="desc">— PDF tools in Rust</span></li>
+<li><a href="https://github.com/7not-nico/rubypdf-tools">rubypdf-tools</a> <span class="desc">— PDF tools in Ruby</span></li>
+<li><a href="https://github.com/7not-nico/pdf-searcher">pdf-searcher</a> <span class="desc">— search inside PDFs</span></li>
+<li><a href="https://github.com/7not-nico/site2pdf">site2pdf</a> <span class="desc">— websites to PDF</span></li>
+<li><a href="https://github.com/7not-nico/web2pdf-rb">web2pdf-rb</a> <span class="desc">— web to PDF Ruby script</span></li>
+<li><a href="https://github.com/7not-nico/ruby-epub">ruby-epub</a> <span class="desc">— EPUB tooling in Ruby</span></li>
 </ul>
-<p class="foot">Forks (omarchy, opencode, koreader…) live on the profile unlisted — watched, not owned.</p>
+
+<h2 id="doom">doom <a class="top" href="#top">↑</a></h2>
+<ul>
+<li><a href="https://github.com/7not-nico/projectbrutalityfix">projectbrutalityfix</a> <span class="desc">— Project Brutality fixes</span></li>
+<li><a href="https://github.com/7not-nico/BrutalDoomPlatinum">BrutalDoomPlatinum</a> <span class="desc">— Brutal Doom fork</span></li>
+</ul>
+
+<h2 id="cli">cli <a class="top" href="#top">↑</a></h2>
+<ul>
+<li><a href="https://github.com/7not-nico/mathpy-cli">mathpy-cli</a> <span class="desc">— math CLI in Python</span></li>
+<li><a href="https://github.com/7not-nico/ink-napoleon-cli">ink-napoleon-cli</a> <span class="desc">— CLI tool</span></li>
+<li><a href="https://github.com/7not-nico/Scripts">Scripts</a> <span class="desc">— problem-solving scripts collection</span></li>
+<li><a href="https://7not-nico.github.io/shell-bench-research/">shell-bench-research</a> <span class="desc">— shell benchmarks, <a href="https://github.com/7not-nico/shell-bench-research">repo</a></span></li>
+</ul>
+
+<h2 id="creative">creative <a class="top" href="#top">↑</a></h2>
+<ul>
+<li><a href="https://github.com/7not-nico/napoleons-campaign">napoleons-campaign</a> <span class="desc">— campaign game project</span></li>
+<li><a href="https://github.com/7not-nico/cardgame-love">cardgame-love</a> <span class="desc">— card game (private)</span></li>
+</ul>
+
+<h2 id="meta">meta <a class="top" href="#top">↑</a></h2>
+<ul>
+<li><a href="https://github.com/7not-nico/it-ops-wiki">it-ops-wiki</a> <span class="desc">— ops wiki (private)</span></li>
+<li><a href="https://github.com/7not-nico/books">books</a> <span class="desc">— books (private)</span></li>
+<li><a href="https://github.com/7not-nico/stale-assembler">stale-assembler</a> <span class="desc">— project instantiator</span></li>
+<li><a href="https://github.com/7not-nico/_atelier">_atelier</a> <span class="desc">— workshop space</span></li>
+</ul>
+
+<h2 id="now">now <a class="top" href="#top">↑</a></h2>
+<ul>
+<li><a href="https://7not-nico.github.io/shell-bench-research/">shell-bench-research</a> — 10 shells measured, bash stays pinned</li>
+<li>assembler — active workspace (not on GitHub Pages)</li>
+</ul>
+
+<p class="foot">Forks (omarchy, opencode, koreader…) live on the profile unlisted — watched, not owned. Full folder view: <a href="https://github.com/7not-nico/hub">hub repo</a>.</p>
 </body>
 </html>
