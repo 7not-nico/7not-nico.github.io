@@ -17,20 +17,39 @@
 {"@context":"https://schema.org","@type":"Person","name":"7not-nico","url":"https://7not-nico.github.io/","sameAs":["https://github.com/7not-nico"]}
 </script>
 <style>
-body{font-family:system-ui,sans-serif;max-width:640px;margin:2rem auto;padding:0 1rem;line-height:1.5;color:#222}
-h1{font-size:1.6rem}h2{font-size:1.15rem;margin-top:1.8rem;border-bottom:1px solid #ddd;padding-bottom:.2rem}
-nav{background:#f6f8fa;border:1px solid #ddd;border-radius:6px;padding:.6rem .9rem}
-nav a{margin-right:.7rem;white-space:nowrap}
-ul{padding-left:1.2rem}li{margin:.25rem 0}
-a{color:#0969da;text-decoration:none}a:hover{text-decoration:underline}
-.desc{color:#555;font-size:.9rem}.top{font-size:.8rem}
-.todo{color:#666;font-style:italic}.foot{margin-top:2rem;color:#666;font-size:.85rem}
+:root{--bg:#fff;--fg:#222;--muted:#555;--border:#e1e4e8;--card:#f6f8fa;--accent:#0969da}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,sans-serif;max-width:760px;margin:0 auto;padding:1.5rem 1rem 3rem;line-height:1.5;color:var(--fg);background:var(--bg)}
+h1{font-size:1.7rem;margin:0 0 .2rem}
+.tagline{color:var(--muted);margin:0 0 1.2rem;font-size:.95rem}
+nav{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.8rem}
+nav a{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:.3rem .7rem;font-size:.85rem;text-decoration:none;color:var(--fg)}
+nav a:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+nav a.hub{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600}
+.domain{margin-bottom:2rem}
+.domain h2{font-size:1.1rem;margin:0 0 .6rem;padding-bottom:.3rem;border-bottom:2px solid var(--accent);display:flex;align-items:baseline;gap:.5rem}
+.domain h2 .count{font-size:.8rem;color:var(--muted);font-weight:400}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.6rem}
+.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:.7rem .9rem;text-decoration:none;color:var(--fg);transition:box-shadow .15s,border-color .15s}
+.card:hover{border-color:var(--accent);box-shadow:0 2px 6px rgba(0,0,0,.08)}
+.card .name{font-weight:600;font-size:.9rem;display:block;margin-bottom:.15rem}
+.card .desc{color:var(--muted);font-size:.8rem;line-height:1.3}
+.card.private{opacity:.55;cursor:default}
+.card.private:hover{box-shadow:none;border-color:var(--border)}
+.now{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:.8rem 1rem;margin-bottom:1.5rem}
+.now h2{margin:0 0 .5rem;border:none;padding:0;font-size:1.05rem}
+.now ul{margin:0;padding-left:1.2rem}.now li{margin:.2rem 0;font-size:.9rem}
+.foot{margin-top:2rem;color:var(--muted);font-size:.8rem;border-top:1px solid var(--border);padding-top:1rem}
+.top{position:fixed;bottom:1rem;right:1rem;background:var(--accent);color:#fff;border-radius:50%;width:2.2rem;height:2.2rem;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:1rem;opacity:.8}
+.top:hover{opacity:1}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--fg:#c9d1d9;--muted:#8b949e;--border:#30363d;--card:#161b22;--accent:#58a6ff}body{background:var(--bg)}}
 </style>
 </head>
 <body id="top">
-<h1>7not-nico — builder and project index</h1>
+<h1>7not-nico</h1>
+<p class="tagline">builder and project index — domains, repos and current work</p>
 <nav>
-<a href="https://github.com/7not-nico/hub">hub</a>
+<a class="hub" href="https://github.com/7not-nico/hub">hub</a>
 <a href="#music-midi">music-midi</a>
 <a href="#pdf-tools">pdf-tools</a>
 <a href="#doom">doom</a>
@@ -40,57 +59,72 @@ a{color:#0969da;text-decoration:none}a:hover{text-decoration:underline}
 <a href="#now">now</a>
 </nav>
 
-<h2 id="music-midi">music-midi <a class="top" href="#top">↑</a></h2>
-<ul>
-<li><a href="https://github.com/7not-nico/khinside-pymidi">khinside-pymidi</a> <span class="desc">— MIDI tooling in Python</span></li>
-<li><a href="https://github.com/7not-nico/v2midi-zig">v2midi-zig</a> <span class="desc">— MIDI tooling in Zig</span></li>
-<li><a href="https://github.com/7not-nico/zigmidi-player">zigmidi-player</a> <span class="desc">— MIDI player in Zig</span></li>
-</ul>
-
-<h2 id="pdf-tools">pdf-tools <a class="top" href="#top">↑</a></h2>
-<ul>
-<li><a href="https://github.com/7not-nico/pdf-tools">pdf-tools</a> <span class="desc">— PDF tools in Rust</span></li>
-<li><a href="https://github.com/7not-nico/rubypdf-tools">rubypdf-tools</a> <span class="desc">— PDF tools in Ruby</span></li>
-<li><a href="https://github.com/7not-nico/pdf-searcher">pdf-searcher</a> <span class="desc">— search inside PDFs</span></li>
-<li><a href="https://github.com/7not-nico/site2pdf">site2pdf</a> <span class="desc">— websites to PDF</span></li>
-<li><a href="https://github.com/7not-nico/web2pdf-rb">web2pdf-rb</a> <span class="desc">— web to PDF Ruby script</span></li>
-<li><a href="https://github.com/7not-nico/ruby-epub">ruby-epub</a> <span class="desc">— EPUB tooling in Ruby</span></li>
-</ul>
-
-<h2 id="doom">doom <a class="top" href="#top">↑</a></h2>
-<ul>
-<li><a href="https://github.com/7not-nico/projectbrutalityfix">projectbrutalityfix</a> <span class="desc">— Project Brutality fixes</span></li>
-<li><a href="https://github.com/7not-nico/BrutalDoomPlatinum">BrutalDoomPlatinum</a> <span class="desc">— Brutal Doom fork</span></li>
-</ul>
-
-<h2 id="cli">cli <a class="top" href="#top">↑</a></h2>
-<ul>
-<li><a href="https://github.com/7not-nico/mathpy-cli">mathpy-cli</a> <span class="desc">— math CLI in Python</span></li>
-<li><a href="https://github.com/7not-nico/ink-napoleon-cli">ink-napoleon-cli</a> <span class="desc">— CLI tool</span></li>
-<li><a href="https://github.com/7not-nico/Scripts">Scripts</a> <span class="desc">— problem-solving scripts collection</span></li>
-<li><a href="https://7not-nico.github.io/shell-bench-research/">shell-bench-research</a> <span class="desc">— shell benchmarks, <a href="https://github.com/7not-nico/shell-bench-research">repo</a></span></li>
-</ul>
-
-<h2 id="creative">creative <a class="top" href="#top">↑</a></h2>
-<ul>
-<li>cardgame-love <span class="desc">— card game (private, no public link)</span></li>
-<li><a href="https://github.com/7not-nico/napoleons-campaign">napoleons-campaign</a> <span class="desc">— campaign game project</span></li>
-</ul>
-
-<h2 id="meta">meta <a class="top" href="#top">↑</a></h2>
-<ul>
-<li>it-ops-wiki <span class="desc">— ops wiki (private, no public link)</span></li>
-<li>books <span class="desc">— books (private, no public link)</span></li>
-<li><a href="https://github.com/7not-nico/stale-assembler">stale-assembler</a> <span class="desc">— project instantiator</span></li>
-<li><a href="https://github.com/7not-nico/_atelier">_atelier</a> <span class="desc">— workshop space</span></li>
-</ul>
-
-<h2 id="now">now <a class="top" href="#top">↑</a></h2>
+<div class="now" id="now">
+<h2>now</h2>
 <ul>
 <li><a href="https://7not-nico.github.io/shell-bench-research/">shell-bench-research</a> — 10 shells measured, bash stays pinned</li>
 <li>assembler — active workspace (not on GitHub Pages)</li>
 </ul>
+</div>
+
+<section class="domain" id="music-midi">
+<h2>music-midi <span class="count">3 repos</span></h2>
+<div class="cards">
+<a class="card" href="https://github.com/7not-nico/khinside-pymidi"><span class="name">khinside-pymidi</span><span class="desc">MIDI tooling in Python</span></a>
+<a class="card" href="https://github.com/7not-nico/v2midi-zig"><span class="name">v2midi-zig</span><span class="desc">MIDI tooling in Zig</span></a>
+<a class="card" href="https://github.com/7not-nico/zigmidi-player"><span class="name">zigmidi-player</span><span class="desc">MIDI player in Zig</span></a>
+</div>
+</section>
+
+<section class="domain" id="pdf-tools">
+<h2>pdf-tools <span class="count">6 repos</span></h2>
+<div class="cards">
+<a class="card" href="https://github.com/7not-nico/pdf-tools"><span class="name">pdf-tools</span><span class="desc">PDF tools in Rust</span></a>
+<a class="card" href="https://github.com/7not-nico/rubypdf-tools"><span class="name">rubypdf-tools</span><span class="desc">PDF tools in Ruby</span></a>
+<a class="card" href="https://github.com/7not-nico/pdf-searcher"><span class="name">pdf-searcher</span><span class="desc">Search inside PDFs</span></a>
+<a class="card" href="https://github.com/7not-nico/site2pdf"><span class="name">site2pdf</span><span class="desc">Websites to PDF</span></a>
+<a class="card" href="https://github.com/7not-nico/web2pdf-rb"><span class="name">web2pdf-rb</span><span class="desc">Web to PDF Ruby script</span></a>
+<a class="card" href="https://github.com/7not-nico/ruby-epub"><span class="name">ruby-epub</span><span class="desc">EPUB tooling in Ruby</span></a>
+</div>
+</section>
+
+<section class="domain" id="doom">
+<h2>doom <span class="count">2 repos</span></h2>
+<div class="cards">
+<a class="card" href="https://github.com/7not-nico/projectbrutalityfix"><span class="name">projectbrutalityfix</span><span class="desc">Project Brutality fixes</span></a>
+<a class="card" href="https://github.com/7not-nico/BrutalDoomPlatinum"><span class="name">BrutalDoomPlatinum</span><span class="desc">Brutal Doom fork</span></a>
+</div>
+</section>
+
+<section class="domain" id="cli">
+<h2>cli <span class="count">4 repos</span></h2>
+<div class="cards">
+<a class="card" href="https://github.com/7not-nico/mathpy-cli"><span class="name">mathpy-cli</span><span class="desc">Math CLI in Python</span></a>
+<a class="card" href="https://github.com/7not-nico/ink-napoleon-cli"><span class="name">ink-napoleon-cli</span><span class="desc">CLI tool</span></a>
+<a class="card" href="https://github.com/7not-nico/Scripts"><span class="name">Scripts</span><span class="desc">Problem-solving scripts collection</span></a>
+<a class="card" href="https://7not-nico.github.io/shell-bench-research/"><span class="name">shell-bench-research</span><span class="desc">Shell benchmarks — 10 shells measured</span></a>
+</div>
+</section>
+
+<section class="domain" id="creative">
+<h2>creative <span class="count">2 repos</span></h2>
+<div class="cards">
+<span class="card private"><span class="name">cardgame-love</span><span class="desc">Card game (private)</span></span>
+<a class="card" href="https://github.com/7not-nico/napoleons-campaign"><span class="name">napoleons-campaign</span><span class="desc">Campaign game project</span></a>
+</div>
+</section>
+
+<section class="domain" id="meta">
+<h2>meta <span class="count">4 repos</span></h2>
+<div class="cards">
+<span class="card private"><span class="name">it-ops-wiki</span><span class="desc">Ops wiki (private)</span></span>
+<span class="card private"><span class="name">books</span><span class="desc">Books (private)</span></span>
+<a class="card" href="https://github.com/7not-nico/stale-assembler"><span class="name">stale-assembler</span><span class="desc">Project instantiator</span></a>
+<a class="card" href="https://github.com/7not-nico/_atelier"><span class="name">_atelier</span><span class="desc">Workshop space</span></a>
+</div>
+</section>
 
 <p class="foot">Forks (omarchy, opencode, koreader…) live on the profile unlisted — watched, not owned. Full folder view: <a href="https://github.com/7not-nico/hub">hub repo</a>.</p>
+<a class="top" href="#top" title="Back to top">↑</a>
 </body>
 </html>
